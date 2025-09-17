@@ -1,0 +1,31 @@
+body {
+    background-color: gainsboro;
+}
+
+.title-container {
+    background-color: #00003a;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    box-shadow: inset;
+    border: gainsboro;
+    border-radius: 0 0 40px 40px;
+}
+
+.thumbnail {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 15px;
+    grid-template-columns: column;
+}
+
+.thumbnail-alt {
+    display: grid;
+    font-style: italic;
+    justify-items: center;
+    background-color: #00003a;
+}
