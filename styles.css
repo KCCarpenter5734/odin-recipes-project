@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #00003a;
+    background-color: #B9BD86;
     padding: 20px 60px;
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .title-container {
-    background-color: #00003a;
+    background-color: #B9BD86;
     color: white;
     display: grid;
     justify-content: center;
@@ -101,7 +101,7 @@ body {
 #tagline {
     font-style: italic;
     text-align: center;
-    background-color: #00002a;
+    background-color: #B9BD80;
     color: white;
 }
 
@@ -139,13 +139,26 @@ z-index: 1;
 }
 
 .hero-section{
-    background-image:url("./images/HomeMadeRecipesHero.jpg") fixed center;
-    background-size: cover;
-    height: 100vh;
+  background: url("./images/HomeMadeRecipesHero.jpg") center/cover no-repeat fixed;
+  min-height: 100vh;          
+  position: relative;         
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);             
+  place-items: start center;
+  padding: 20px;
 }
 .hero-text{
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  margin: 0;
+}
+
+.body-heading1{
     text-align: center;
-    z-index: 1;
+    padding: 10px;
+    font-size: 26px;
+    color: #00002a;
 }
 
 
