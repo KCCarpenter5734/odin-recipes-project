@@ -1,3 +1,88 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00003a;
+    padding: 20px 60px;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.nav-links {
+    width: 70%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
+.nav-links li{
+    margin-left: 20px;
+}
+
+.nav-links li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover{
+    color: #00009a;
+}
+
+.nav-links li .active{
+    color:#95837A;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.login-btn{
+    background-color: #95837A;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.login-btn:hover{
+    background-color: #896e60;
+}
+
+.signup-btn{
+    background-color: #95837A;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.signup-btn:hover{
+    background-color: #896e60;
+}
 body {
     background-color: gainsboro;
 }
@@ -5,19 +90,19 @@ body {
 .title-container {
     background-color: #00003a;
     color: white;
-    padding: ;
-    margin: ;
     display: grid;
     justify-content: center;
     align-content: center;
     box-shadow: inset;
     border: gainsboro;
-    border-radius: 0 0 40px 40px;
 
 }
 
 #tagline {
     font-style: italic;
+    text-align: center;
+    background-color: #00002a;
+    color: white;
 }
 
 .thumbnail {
@@ -34,6 +119,7 @@ body {
     justify-content: center;
     background-color: #00003a;
     color: white;
+    z-index: 1;
 }
 
 .recipe-images {
@@ -42,23 +128,24 @@ body {
  flex-wrap: nowrap;
  max-width: fit-content;
  margin: 0 auto;
- padding: 20px;
+ padding: 20px 0 0;
  gap: 20px;
+ z-index: 1;
 }
 
 .recipe-card {
 text-align: center;
+z-index: 1;
 }
 
-.sidebar-column {
- display: flex;
- flex-direction: column;
- column-width: 100px;
- background-color: #00003a;
+.hero-section{
+    background-image:url("./images/HomeMadeRecipesHero.jpg") fixed center;
+    background-size: cover;
+    height: 100vh;
+}
+.hero-text{
+    text-align: center;
+    z-index: 1;
 }
 
-.sidebar-title {
- font-size: 18px;
- background-color: #00003a;
- color: white;
-}
+
