@@ -10,14 +10,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #B9BD86;
     padding: 20px 60px;
+    position: sticky; top: 0;
+    z-index: 10;
+    background-color: rgba(2, 250, 180, 0.112);
 }
 
 .navbar .logo {
     color: white;
     font-size: 26px;
     font-weight: bold;
+    flex-wrap: nowrap;
+    position: sticky; top: 0;
+    z-index: 10;
 }
 
 .logo:hover{
@@ -44,11 +49,11 @@
 }
 
 .nav-links li a:hover{
-    color: #00009a;
+    color: #0F3325;
 }
 
 .nav-links li .active{
-    color:#95837A;
+    color:#0F3325;
 }
 
 .btn {
@@ -101,8 +106,10 @@ body {
 #tagline {
     font-style: italic;
     text-align: center;
-    background-color: #B9BD80;
-    color: white;
+    background-color: #0F3325;
+   color: white;
+   position: sticky; top: 0;
+   z-index: 10;
 }
 
 .thumbnail {
@@ -138,20 +145,25 @@ text-align: center;
 z-index: 1;
 }
 
-.hero-section{
-  background: url("./images/HomeMadeRecipesHero.jpg") center/cover no-repeat fixed;
-  min-height: 100vh;          
-  position: relative;         
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0), black),url("./images/HomeMadeRecipesHero.jpg") center/cover no-repeat fixed; 
+    min-height: 100vh;
+    min-width: 100vh;
+}
+.hero-section{         
   display: grid;
-  grid-template-rows: repeat(4, 1fr);             
-  place-items: start center;
+  grid-template-rows: repeat(2, 30px);
+  flex-wrap: wrap;
+  width: 370px;
   padding: 20px;
 }
+
 .hero-text{
   position: relative;
   z-index: 1;
   color: #fff;
   margin: 0;
+  color: #0F3325;
 }
 
 .body-heading1{
@@ -159,6 +171,26 @@ z-index: 1;
     padding: 10px;
     font-size: 26px;
     color: #00002a;
+}
+
+#hero-cta-container{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.hero-cta{
+    background-color: rgb(205, 247, 235);
+    color: #0F3325;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.hero-cta:hover{
+    background-color: #0F3325;
+    color: #fff;
 }
 
 
