@@ -13,11 +13,11 @@
     padding: 20px 60px;
     position: sticky; top: 0;
     z-index: 10;
-    background-color: rgba(2, 250, 180, 0.112);
+    background: linear-gradient(90deg,rgb(205, 247, 235), rgb(0, 57, 41), rgb(0, 57, 41));
 }
 
 .navbar .logo {
-    color: white;
+    color: #0F3325;
     font-size: 26px;
     font-weight: bold;
     flex-wrap: nowrap;
@@ -49,11 +49,11 @@
 }
 
 .nav-links li a:hover{
-    color: #0F3325;
+    color: #000;
 }
 
 .nav-links li .active{
-    color:#0F3325;
+    color:rgb(205, 247, 235);
 }
 
 .btn {
@@ -189,7 +189,7 @@ z-index: 1;
 }
 
 .hero-cta:hover{
-    background-color: #0F3325;
+    background: rgb(0, 57, 41);
     color: #fff;
 }
 
