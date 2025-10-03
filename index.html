@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link id="light-theme" rel="stylesheet" href="lightmode.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link id="dark-theme" rel="stylesheet" href="darkmode.css" disabled>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oma</title>
+    <title>TOP Recipes</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">Oma</div>
-        <ul class="nav-links">
-            <li><a href="./index.html" class="active">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./recipes/recipes.html">Recipes</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-        <div class="btn">
-            <a href="#" class="login-btn">Login</a>
-            <a href="#" class="signup-btn">Signup</a>
-        </div>                                                                                                                                                                                              
-    </nav>
-
+    <header>
+        <nav id="navbar">
+        <img src="./images/omalogolight.png" alt="" width="125" height="125" id="logo">
+            <div class="nav-link">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./recipes/recipes.html">Recipes</a>
+                <a href="./contact.html">Contact</a>
+                <a href="#" onclick="toggleTheme()">Appearance</a>
+            </div>                                                                                                                                                                                      
+        </nav>
+    </header>
+    <hr>
     <section id="hero">
         <div class="hero-section">
-            <h4 class="hero-text hero-heading"><strong>Keep the Flavor. Guard the Memory</strong></h4>
-            <h6 class="hero-text hero-paragraph"><em>A private, encrypted home for heirloom recipes—so Grandma’s notes live on exactly as she wrote them.</em></h6>
-            <div id="hero-cta-container">
+            <h1 class="hero-text hero-heading satisfy-bold"><strong>Keep the Flavor. Guard the Memory</strong></h1>
+            <h2 class="hero-text satisfy-regular"><em>A private, encrypted home for heirloom recipes—so Grandma’s notes live on exactly as she wrote them.</em></h2>
+        </div>
+        <div id="hero-cta-container">
             <a href="#" class="hero-cta"><strong>Signup Free</strong></a>
             <a href="#" class="hero-cta"><strong>See How It Works</strong></a>
-            </div>
         </div>
     </section>
     <section>
         <div class="section2-container">
-        <h1 class="section2-heading">Safeguarding the Taste of Home</h1>
-        <p class="section2-text">At the heart of every family gathering is are recipes, 
+        <h3 class="section2-heading satisfy-bold"><strong>Safeguarding the Taste of Home</strong></h3>
+        <p class="section2-text satisfy-regular">At the heart of every family gathering is are recipes, 
             ones that carry laughter, love, and memories in every bite. 
             Oma was created to ensure those recipes never disappear. 
             More than a digital cookbook, Oma is a private family vault:
@@ -45,11 +48,75 @@
              place, where privacy is honored, and where the taste of home is kept
               alive for the people who matter most.</p>
         </div>
-        <div class="">
+    </section>
+    <section id="features">
+        <h4 class="features-heading satisfy-regular">Why Families Trust Oma</h4>
+        <div class="features-container">
+            <div class="features-card satisfy-regular">
+                <h5 class="features-title">Private & Encrypted</h5>
+                <p class="features-description">Your recipes are safe with us. We use best practices to keep your legacy safe and secure.</p>
+            </div>
+            <div class="features-card satisfy-regular">
+                <h5 class="features-title">Share Selectively</h5>
+                <p class="features-description"><p>You grant access to specific recipes to specific people. We handle the rest.</p>
+            </div>
+            <div class="features-card satisfy-regular">
+                <h5 class="features-title">Preserve Forever</h5>
+                <p class="features-description"><p>Handwritten notes, stains and all; keep your recipes as they were written. </p>
+            </div>
         </div>
     </section>
-    <section>
-
+    <section id="howitworks">
+        <details>
+        <summary class="howitworks-heading satisfy-regular">How It Works</summary>
+        <ol class="howitworks-list satisfy-regular">
+            <li>Sign Up (it's FREE!)</li>
+            <li>Head over to the Recipes Page</li>
+            <li>Click "Add Recipe" at the top right</li>
+            <li>Input your recipe in the fields provided</li>
+            <li>Choose your security preference</li>
+            <li>Click "Store"</li>
+            <li>Enjoy sending, sharing or keeping your recipes for years to come!</li>
+        </ol>
+        </details>
     </section>
+    <section id="final-cta">
+        <div class="final-cta">
+            <h2 class="final-cta-heading satisfy-regular">Ready to Preserve Your Family's Legacy?</h2>
+            <a href="#" class="hero-cta">Get Started Free!</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="./images/omalogodark.png" alt="" width="125" height="125" id="logo">
+                <p class="satisfy-regular">Safeguarding family recipes for generations.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./recipes/recipes.html">Recipes</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Security</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <a href="#">Support</a>
+                <a href="#">FAQ</a>
+                <a href="">hello@oma.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p role="contentinfo">&copy; 2025 Oma. Keep the Flavor. Guard the Memory.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
+
